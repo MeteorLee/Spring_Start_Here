@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+  <h1>Welcome <span th:text="${name}"></span> !</h1>
+
+  <h2>Insert Payment</h2>
+  <form action="/payment" method="post">
+  Insert : <input type="text" name="payment">
+  </form>
+  <br>
+  <br>
+  <a href="/main?logout">logout</a>
+</body>
+</html>
